@@ -1,0 +1,8 @@
+name: trainer-env
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - torchvision
+  - pytorch
+  - mlflow

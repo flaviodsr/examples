@@ -1,0 +1,9 @@
+apiVersion: serving.kserve.io/v1beta1
+kind: InferenceService
+metadata:
+  name: torchscript-cifar10
+spec:
+  predictor:
+    serviceAccountName: mlflow-sklearn-kserve
+    pytorch:
+      storageUri: s3://mlflow-artifacts/1/f619c09e75234208b68ac271866cd084/artifacts/model/data
